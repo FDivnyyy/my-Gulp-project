@@ -1,0 +1,14 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Life|with|me"
+
+block content
+	include ../blocks/modules/header/header
+	include ../blocks/modules/body/body
+	include ../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
